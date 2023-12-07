@@ -1,0 +1,55 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1;
+}
+
+/* 이미지 추가 영역 */
+.widget .group-content .content-dictionary .dictionary-search::after,
+.art-dailyStock .group-header .btn.refresh::before,
+.art-dailyStock .group-board .stockView .stockCompany-item .stockname .stockCompany-price .priceUp-ic,
+.art-dailyStock .group-board .stockView .stockCompany-item:nth-child(4) .stockname::after,
+.sc-news .group-issue .issue-area .invertedtriangle,
+.whalebrowser .whale-link .ic-whale,
+.widget .group-link .moretomobile .mobilemain::after,
+.widget .group-link .moretomobile .mobilemain::before,
+.widget .group-naverclip .naverclip-header .ic-naverclip,
+.widget .group-content .content-papago .papago-link::before,
+.widget .group-content .content-papago .ic-papago,
+.art-dailyStock .group-board .stockView .priceUp-ic::after,
+.art-dailyStock .group-header .refresh::before,
+.art-dailyStock .group-header .btn-stockinfo::before,
+.art-dailyWeather .group-header .dailyWeather-link .dailyWeather-compare::before,
+.sc-login .link-login::before,
+.header .util-area > *::after,
+.header .group-nav .nav-item [class*="ic-"]::after,
+.header .group-nav .nav-item [class*="ic-"]::before,
+.header .group-search button::before{
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 435px auto;
+}
+
+/* 메인이미지 */
+.art-dailyWeather .currWeather .currTemp .curr-icon::before,
+.art-dailyWeather .weatherBoard .todayBoard .weatherBoard-item:nth-child(3) .ic-weacther:before,
+.art-dailyWeather .weatherBoard .todayBoard .weatherBoard-item:nth-child(4) .ic-weacther:before,
+.art-dailyWeather .weatherBoard .todayBoard .weatherBoard-item:nth-child(5) .ic-weacther:before,
+.art-dailyWeather .weatherBoard .todayBoard .weatherBoard-item .ic-weacther::before{
+    background-image: url(../images/sp_weather.png);
+    background-size: 641px 587px;
+    background-repeat: no-repeat;
+}
+
+/* 화살표이미지 */
+.sc-news .group-control .control-area .btn-prev::before,
+.sc-news .group-control .control-area .btn-next::before,
+.sc-shopping .group-control .control-area .btn-next::before,
+.sc-shopping .group-control .control-area .btn-prev::before{
+    background-image: url(../images/sp_main.png);
+    background-repeat: no-repeat;
+    background-size: 134px 121px;
+}

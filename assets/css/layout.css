@@ -1,0 +1,182 @@
+@import './reset.css';
+@import './common.css';
+
+.header{}
+.header .header-inner{
+    position: relative;
+    width: 1280px;
+    height: 261px;
+    margin: 0 auto;
+    padding: 64px 0 42px;
+}
+
+.header .group-search{
+    display: flex;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    width: 706px;
+    border: 1px solid #03c75a;
+    border-radius: 33px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+.header .group-search .logo{}
+.header .group-search .logo a{
+    display: block;
+    margin-right: 12px;
+    padding: 17px 17px 17px 27px;
+}
+.header .group-search .logo svg{
+    width: 24px;
+    height: 24px;
+}
+.header .group-search .logo path{
+    fill:#03c75a;
+}
+.header .group-search form{
+    flex: 1;
+}
+.header .group-search fieldset{
+    display: flex;
+}
+.header .group-search form .input-text{
+    flex: 1;
+
+    height: 58px;
+    color: #000;
+    padding: 17px 0;
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;
+    outline: 0;
+
+}
+.header .group-search form .btn-keyboard{
+    padding: 0 3px;
+}
+.header .group-search form .btn-help{
+    padding: 0 6px;
+}
+.header .group-search form .btn-submit{
+    padding: 0 27px 0 10px;
+}
+
+.header .group-search form .btn-keyboard::before{
+    content: '';
+    width: 24px;
+    height: 16px;
+    display: block;
+    background-position: -270px -234px;
+}
+.header .group-search form .btn-help::before{
+    content: '';
+    width: 10px;
+    height: 6px;
+    display: block;
+    background-position: -318px -247px;
+}
+.header .group-search form .btn-submit::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-position: -295px -329px;
+}
+
+/* group-nav */
+.header .group-nav{
+    width: 676px;
+    margin: 72px auto 0;
+}
+.header .group-nav .nav-list{
+    display: flex;
+    gap: 4px;
+}
+.header .group-nav .nav-item{
+    flex: 1;
+}
+.header .group-nav .nav-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.header .group-nav .nav-item [class*="ic-"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+.header .group-nav .nav-item [class*="ic-"]::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    background-position: 0px -128px;
+    width: 54px;
+    height: 54px;
+}
+.header .group-nav .nav-item [class*="ic-"]::after{
+    content: '';
+    width: 44px;
+    height: 44px;
+    z-index: 1;
+}
+.header .group-nav .nav-item .name{}
+
+/* 개인 */
+.header .group-nav .nav-item .ic-mail::after{background-position: -250px -90px;}
+.header .group-nav .nav-item .ic-cafe::after{background-position: -250px 0;}
+.header .group-nav .nav-item .ic-blog::after{background-position: -201px -98px;}
+.header .group-nav .nav-item .ic-shop::after{background-position: -90px -209px;}
+.header .group-nav .nav-item .ic-news::after{background-position: 0px -209px;}
+.header .group-nav .nav-item .ic-stock::after{background-position: -180px -209px;}
+.header .group-nav .nav-item .ic-realestate::after{background-position: -45px -209px;}
+.header .group-nav .nav-item .ic-map::after{background-position: -201px 0px;}
+.header .group-nav .nav-item .ic-webtoon::after{background-position: -225px -209px;}
+.header .group-nav .nav-item .ic-etc::after{background-position: -250px -135px;}
+
+
+.header .util-area{
+    position: absolute;
+    top: 18px;
+    display: flex;
+}
+.header .util-area.left{left: -10px;}
+.header .util-area.right{right: -10px;}
+
+.header .util-area > *{padding: 10px;}
+.header .util-area .btn-pay{padding: 7px;}
+
+.header .util-area .btn-menu::after{
+    content: "";
+    display: block;
+    background-position: -82px -329px;
+    width: 26px;
+    height: 26px;
+}
+.header .util-area .btn-pay::after{
+    content: "";
+    display: block;
+    background-position: -295px -177px;
+    width: 32px;
+    height: 32px;
+}
+.header .util-area .btn-talk::after{
+    content: "";
+    display: block;
+    background-position: -190px -329px;
+    width: 26px;
+    height: 26px;
+}
+.header .util-area .btn-alert::after{
+    content: "";
+    display: block;
+    background-position: -136px -329px;
+    width: 26px;
+    height: 26px;
+}
